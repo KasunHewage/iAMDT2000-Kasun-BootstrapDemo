@@ -1,0 +1,112 @@
+*{
+    margin: auto;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color: #333333;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+.navigation-bar{
+    width: 50%;
+    height: 60px;
+    display: flex;
+}
+
+.logo{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo-txt{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.nav-links{
+    margin-right: 0;
+}
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-links ul li{
+    margin-left: 20px;
+}
+
+.nav-links ul li a{
+    color: rgb(155, 155, 155);
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: #9b9b9b00 4px solid;
+}
+
+.nav-links ul li a:hover{
+    border-bottom: #9b9b9b 4px solid;
+}
+
+.content{
+    width: 70%;
+    text-align: center;
+    transform: translateY(70%);
+}
+
+.content p{
+    font-size: 20px;
+    font-weight: lighter;
+    width: 75%;
+}
+
+.content button{
+    color: #333333;
+    font-weight: 700;
+    background-color: white;
+    padding: 14px 40px;
+    border-radius: 10px;
+}
+
+.features-btn{
+    background-color: #0069D9 !important;
+    border: none;
+    color: white !important;
+}
+
+.card{
+    background-color: transparent;
+    border: 1px white solid !important;
+}
+
+.list-group-item{
+    background-color: transparent;
+    border-bottom: 1px white solid;
+    width: 100%;
+}
+
+.list-group{
+    margin: 0px;
+}
+
+.active{
+    color: white !important;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    opacity: 70%;
+}
+
