@@ -1,23 +1,25 @@
+
+
 *{
     margin: auto;
     padding: 0;
-    color: white;
+    color: black;
 }
 
-body{
-    background-color: #333333;
+body {
     height: 100vh;
 }
 
 header{
     width: 100%;
     height: 60px;
+    background-color: black;
 }
 
 .navigation-bar{
     width: 50%;
     height: 60px;
-    display: flex;
+    display: flex
 }
 
 .logo{
@@ -28,6 +30,7 @@ header{
 .logo-txt{
     font-size: 26px;
     font-weight: 400;
+    color: white;
 }
 
 .nav-links{
@@ -57,6 +60,7 @@ header{
     border-bottom: #9b9b9b 4px solid;
 }
 
+
 .content{
     width: 70%;
     text-align: center;
@@ -70,11 +74,12 @@ header{
 }
 
 .content button{
-    color: #333333;
+    color: #ffffff;
     font-weight: 700;
-    background-color: white;
+    background-color: #0069D9;
     padding: 14px 40px;
     border-radius: 10px;
+    border: none;
 }
 
 .features-btn{
@@ -85,12 +90,12 @@ header{
 
 .card{
     background-color: transparent;
-    border: 1px white solid !important;
+    border: 1px rgba(0, 0, 0, 0.192) solid !important;
 }
 
 .list-group-item{
     background-color: transparent;
-    border-bottom: 1px white solid;
+    border-bottom: 1px rgba(0, 0, 0, 0.192) solid;
     width: 100%;
 }
 
@@ -102,11 +107,97 @@ header{
     color: white !important;
 }
 
+.pricing-cards{
+    border: 1px rgba(0, 0, 0, 0.171) solid;
+    border-radius: 10px;
+    padding: 0px;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+
+.pricing-cards h3{
+    background-color: #F7F7F7;
+    padding: 10px 0;
+    border-bottom: 1px rgba(0, 0, 0, 0.171) solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pricing-cards
+h1, ul, button{
+    padding: 0 20px;
+}
+
+.pricing-cards span{
+    color: #9b9b9b;
+}
+
+.pricing-cards ul{
+    list-style: none;
+}
+
+.pricing-cards button{
+    background-color: transparent;
+    border: 2px #007bff solid;
+    color: #007bff;
+}
+
+.crd-two button,
+.crd-three button{
+    background-color: #007bff;
+    color: white;
+}
+
+.contact-content .form-content{
+    height: 600px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.219) 1px 2px 10px;
+}
+
+.form-content .left-side{
+    background-color: #F7F7F7;
+    height: 600px;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.form-content .left-side p{
+    font-size: 16px;
+    color: #9b9b9b;
+}
+
+.form-content .right-side{
+    background-color: #000000;
+    height: 600px;
+    padding-top: 150px;
+}
+
+.contact-content .form-content .right-side
+p, i{
+    color: white;
+}
+
+.contact-content .form-content .right-side a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-content
+input, textarea{
+    margin: 20px 0;
+    padding: 20px;
+}
+
 footer{
     width: 100%;
     text-align: center;
     position: fixed;
     bottom: 0;
-    opacity: 70%;
+    background-color: black;
+    padding-top: 10px;
+}
+
+footer p{
+    color: white;
 }
 

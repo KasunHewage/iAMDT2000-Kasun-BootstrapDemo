@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#cover-navbar").load("partials/navbar.html", function() {
+          $("#nav-pricing").addClass("active")
+        })
+      });
+    </script>
+    <title>Cover</title>
+  </head>
+  <body>
+    
+    <header>
+        <div id="cover-navbar"></div>
+    </header>
+
+    <div class="content picing-content" style="transform: translateY(10vh);">
+      <h1>PRICING</h1>
+      <p>
+        Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.
+      </p>
+      <div class="row">
+        <div class="pricing-cards col-3">
+          <h3>FREE</h3>
+          <h1>$0 / <span>mo</span></h1>
+          <ul>
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button class=" btn btn-primary">SIGN UP FOR FREE</button>
+        </div>
+        <div class="pricing-cards crd-two col-3">
+          <h3>PRO</h3>
+          <h1>$15 / <span>mo</span></h1>
+          <ul>
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button class=" btn btn-primary">SIGN UP FOR FREE</button>
+        </div>
+        <div class="pricing-cards crd-three col-3">
+          <h3>ENTERPRICE</h3>
+          <h1>$29 / <span>mo</span></h1>
+          <ul>
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button class=" btn btn-primary">SIGN UP FOR FREE</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+      $(document).ready(function() {
+        $("#footer").load("partials/footer.html")
+      });
+    </script>
+    
+    <script src="" async defer></script>
+  </body>
+</html>
