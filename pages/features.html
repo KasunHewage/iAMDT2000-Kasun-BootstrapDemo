@@ -30,39 +30,37 @@
           <form id="my-form">
             <div class="mb-3">
               <label class="form-label">Name</label>
-              <input id="my-input-name" type="text" class="form-control" id="exampleFormControlInput1">
+              <input id="nameInput" type="text" class="form-control" >
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Your Suggestions</label>
-              <textarea id="my-input" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea id="textInput" class="form-control" type="Submit"  rows="3"></textarea>
             </div>
-            <button class="btn btn-primary features-btn" type="submit">Submit</button>
+            <button id="btn2" class="btn btn-primary features-btn" >Submit</button>
           </form>
         </div>
-        <div class=" col-6" style="margin-top: 58px; margin-bottom: 0px;">
-          <div class="card ">
-            <ul class="list-group list-group-flush ">
-              <li class="list-group-item ">
-                <span id="change-by-input">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                </span>
-                <br>
-                <span class="badge bg-success">By <span id="change-by-input-name">Kasun</span></span>
-                <span class="badge bg-danger">Moderator</span>
-              </li>
-              <li class="list-group-item">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                <br>
-                <span class="badge bg-success">By Krishan</span>
-                <span class="badge bg-info text-dark">User</span>
-              </li>
-              <li class="list-group-item">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                <br>
-                <span class="badge bg-success">By Kasun</span>
-                <span class="badge bg-warning text-dark">Editor</span>
-              </li>
-            </ul>
+        <div class=" col-6" style="margin-top: 58px; margin-bottom: 0px;height: 500px; overflow: auto;">
+          <div id="card"  >
+            <div class="card " >
+              <ul class="list-group list-group-flush ">
+                <li class="list-group-item ">
+                  <span >
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </span>
+                  <br>
+                  <span class="badge bg-success"><span id="byWho">By</span> <span >Kasun</span></span>
+                  <span class="badge bg-danger">Moderator</span>
+                </li>
+                <li class="list-group-item ">
+                  <span >
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </span>
+                  <br>
+                  <span class="badge bg-success" id="byWho">By <span >Kasun</span></span>
+                  <span class="badge bg-danger">Moderator</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -75,14 +73,14 @@
         $("#footer").load("partials/footer.html")
       });
 
-      $("#my-form").submit(function(event){
-        event.preventDefault();
-        var textInput = $("#my-input").val();
-        $("#change-by-input").text(textInput);
-        
-        var nameInput = $("#my-input-name").val();
-        $("#change-by-input-name").text(nameInput);
-
+      $("#my-form").ready(function(){
+        $("#btn2").click(function(){
+          event.preventDefault();
+          var inputOne = $("#nameInput").val();
+          var inputTwo = $("#textInput").val();
+          var htmlElement = $("#byWho").html();
+          $("#card").prepend("<li>" + inputTwo + "<br>" + htmlElement + " " + inputOne);
+        });
       });
     </script>
     
